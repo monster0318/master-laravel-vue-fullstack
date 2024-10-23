@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-import { useForm, Link } from '@inertiajs/inertia-vue3'
+import { useForm, Link } from '@inertiajs/vue3'
 
 const form = useForm({
   name: null,

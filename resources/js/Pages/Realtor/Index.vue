@@ -94,7 +94,7 @@ import Box from '@/Components/UI/Box.vue'
 import EmptyState from '@/Components/UI/EmptyState.vue'
 import Pagination from '@/Components/UI/Pagination.vue'
 import RealtorFilters from '@/Pages/Realtor/Index/Components/RealtorFilters.vue'
-import { Link } from '@inertiajs/inertia-vue3'
+import { Link } from '@inertiajs/vue3'
 
 defineProps({
   listings: Object,

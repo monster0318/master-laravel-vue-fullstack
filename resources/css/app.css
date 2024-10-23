@@ -3,35 +3,35 @@
 @tailwind utilities;
 
 @layer components {
-  .label {
-    @apply block mb-1 text-gray-500 dark:text-gray-300 font-medium
-  }
+    .label {
+        @apply block mb-1 text-gray-500 dark:text-gray-300 font-medium;
+    }
 
-  .input {
-    @apply block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500
-  }
+    .input {
+        @apply block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500;
+    }
 
-  .input-error {
-    @apply text-sm text-red-500 dark:text-red-400
-  }
+    .input-error {
+        @apply text-sm text-red-500 dark:text-red-400;
+    }
 
-  .input-filter-l {
-    @apply placeholder:text-gray-400 dark:placeholder:text-gray-600 border border-gray-200 dark:border-gray-700 rounded-t-md rounded-l-md rounded-b-md rounded-r-none text-sm font-medium text-gray-600 dark:text-gray-400 dark:bg-gray-800
-  }
+    .input-filter-l {
+        @apply placeholder:text-gray-400 dark:placeholder:text-gray-600 border border-gray-200 dark:border-gray-700 rounded-t-md rounded-l-md rounded-b-md rounded-r-none text-sm font-medium text-gray-600 dark:text-gray-400 dark:bg-gray-800;
+    }
 
-  .input-filter-r {
-    @apply placeholder:text-gray-400 dark:placeholder:text-gray-600 border border-l-0 border-gray-200 dark:border-gray-700 rounded-t-md rounded-l-none rounded-b-none rounded-r-md text-sm font-medium text-gray-600 dark:text-gray-400 dark:bg-gray-800
-  }
+    .input-filter-r {
+        @apply placeholder:text-gray-400 dark:placeholder:text-gray-600 border border-l-0 border-gray-200 dark:border-gray-700 rounded-t-md rounded-l-none rounded-b-none rounded-r-md text-sm font-medium text-gray-600 dark:text-gray-400 dark:bg-gray-800;
+    }
 
-  .btn-normal {
-    @apply bg-gray-600 hover:bg-gray-500 text-white font-medium p-2 rounded-md
-  }
+    .btn-normal {
+        @apply bg-gray-600 hover:bg-gray-500 text-white font-medium p-2 rounded-md;
+    }
 
-  .btn-primary {
-    @apply bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rounded-md
-  }
+    .btn-primary {
+        @apply bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rounded-md;
+    }
 
-  .btn-outline {
-    @apply p-2 rounded-md border shadow-sm border-gray-300 dark:border-gray-800 hover:border-gray-400 hover:bg-gray-50 dark:hover:border-gray-700 dark:hover:bg-gray-800
-  }
+    .btn-outline {
+        @apply p-2 rounded-md border shadow-sm border-gray-300 dark:border-gray-800 hover:border-gray-400 hover:bg-gray-50 dark:hover:border-gray-700 dark:hover:bg-gray-800;
+    }
 }

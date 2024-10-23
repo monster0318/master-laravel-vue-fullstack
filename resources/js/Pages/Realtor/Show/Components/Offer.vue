@@ -35,7 +35,7 @@
 <script setup>
 import Price from '@/Components/Price.vue'
 import Box from '@/Components/UI/Box.vue'
-import { Link } from '@inertiajs/inertia-vue3'
+import { Link } from '@inertiajs/vue3'
 import { computed } from 'vue'
 
 const props = defineProps({

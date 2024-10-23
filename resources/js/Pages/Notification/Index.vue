@@ -40,7 +40,7 @@
 import Price from '@/Components/Price.vue'
 import EmptyState from '@/Components/UI/EmptyState.vue'
 import Pagination from '@/Components/UI/Pagination.vue'
-import { Link } from '@inertiajs/inertia-vue3'
+import { Link } from '@inertiajs/vue3'
 
 defineProps({
   notifications: Object,

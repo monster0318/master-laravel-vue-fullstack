@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Offer;
+use Gate;
 use Illuminate\Http\Request;
 
 class RealtorListingAcceptOfferController extends Controller
@@ -10,7 +11,8 @@ class RealtorListingAcceptOfferController extends Controller
     public function __invoke(Offer $offer)
     {
         $listing = $offer->listing;
-        $this->authorize('update', $listing);
+        // $this->authorize('update', $listing);
+        Gate::authorize('update', $listing);
 
         // Accept selected offer
         $offer->update(['accepted_at' => now()]);

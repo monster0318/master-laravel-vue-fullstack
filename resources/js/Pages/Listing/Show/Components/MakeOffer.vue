@@ -30,7 +30,7 @@
 <script setup>
 import Price from '@/Components/Price.vue'
 import Box from '@/Components/UI/Box.vue'
-import { useForm } from '@inertiajs/inertia-vue3'
+import { useForm } from '@inertiajs/vue3'
 import { computed, watch } from 'vue'
 import { debounce } from 'lodash'
 

@@ -15,10 +15,12 @@ class AuthController extends Controller
 
     public function store(Request $request)
     {
-        if (!Auth::attempt($request->validate([
-            'email' => 'required|string|email',
-            'password' => 'required|string'
-        ]), true)) {
+        if (
+            !Auth::attempt($request->validate([
+                'email' => 'required|string|email',
+                'password' => 'required|string'
+            ]), true)
+        ) {
             throw ValidationException::withMessages([
                 'email' => 'Authentication failed'
             ]);
@@ -36,6 +38,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('listing.index');
+        return to_route('listing.index');
     }
 }

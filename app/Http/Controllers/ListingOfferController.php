@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Offer;
 use App\Models\Listing;
+use Gate;
 use Illuminate\Http\Request;
 use App\Notifications\OfferMade;
 
@@ -11,7 +12,8 @@ class ListingOfferController extends Controller
 {
     public function store(Listing $listing, Request $request)
     {
-        $this->authorize('view', $listing);
+        // $this->authorize('view', $listing);
+        Gate::authorize('view', $listing);
 
         $offer = $listing->offers()->save(
             Offer::make(
